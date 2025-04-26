@@ -17,7 +17,7 @@ connectDB();
 app.use(
   cors({
     origin: ["https://academicplanner.netlify.app"], // your frontend domain
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // <-- ADD PATCH HERE
     credentials: true,
   })
 );
